@@ -71,7 +71,9 @@ public class LinkedList { // status -> complete
 			current = current.next;
 			startpos++;
 		}
-		if(current == null) {return;}
+		if(current == null) {
+			return;
+		}
 		
 		newnode.next = current.next;
 		current.next = newnode;
